@@ -1,0 +1,184 @@
+\documentclass[11pt, article]{abntex2}
+% ABNT %
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage[alf, abnt-repeadted-title-omit=yes,abnt-emphasize=bf,abnt-etal-list=0]{abntex2cite}
+\usepackage[hidelinks]{hyperref}
+% FIGURAS %
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+\usepackage{subfig}
+\usepackage{float}
+%
+\usepackage{placeins}
+\renewcommand{\contentsname}{Sumário}
+\usepackage{esvect} %vetores
+%------------------------------------------------------
+\begin{document}
+\begin{titlepage}
+
+\parbox{1.5cm}{\includegraphics[scale=0.25]{logo_uerj_cor}}
+\vspace*{-0.8cm}{\hspace*{2.2cm} \Large{\textbf{Universidade do Estado do Rio de Janeiro}\\
+\hspace*{6.3cm}}}\Large{Departamento de Física Teórica} \\
+
+\vspace{5cm}
+\hspace{4.5cm} \Large{\textbf{Experimento 3.2: Lei de Hooke }}
+\vspace{11cm}
+
+\begin{flushleft}
+Professores: Marcelo Chiapparini e Maria de Fátima\\
+Aluno: José Gonçalves Chaves Junior \\
+M: 202020477411\\
+\end{flushleft}
+
+\end{titlepage}
+\newpage
+\tableofcontents
+\newpage
+\section{Introdução}
+
+Existe uma grande variedade de forças de interação, e que a caracterização de tais forças é, via de regra, um trabalho de caráter puramente experimental. Entre as forças de interação que figuram mais frequentemente nos processos que se desenvolvem ao nosso redor, figuram as chamadas forças elásticas, isto é, forças que são exercidas por sistemas elásticos quando sofrem deformações. Por esse motivo é interessante que se tenha uma ideia do comportamento mecânico dos sistemas elásticos.\\
+Em 1660, Hooke \footnote{físico inglês, 1635-1703. Foi um cientista experimental inglês do século XVII, uma das figuras-chave da revolução científica.}, observando o comportamento mecânico de uma mola, descobriu que as deformações elásticas obedecem a uma lei muito simples. Hooke descobriu que quanto maior fosse o peso de um corpo suspenso a uma das extremidades de uma mola (cuja outra extremidade era presa a um suporte fixo) maior era a deformação (no caso: aumento de comprimento) sofrida pela mola. Analisando outros sistemas elásticos, Hooke verificou que existia sempre proporcionalidade entre forças deformantes e a deformação elástica produzida. Pôde então enunciar o resultado das suas observações sob forma de uma lei geral. Tal lei, conhecida como lei de Hooke, é a seguinte: 
+\begin{center}
+    "\textit{As forças deformantes são proporcionais às deformações elásticas produzidas.}"
+\end{center}
+A lei de Hooke é a lei da física relacionada à elasticidade de corpos, que serve para calcular a deformação causada pela força exercida sobre um corpo, e matematicamente pode ser expressa como: \\
+\begin{center}
+    \textbf{$\vv{F} = -k\Delta\vv{r} (1.0)$}                        
+\end{center}
+No S.I, F, a força, em Newton, k, constante elástica da mola, em Newton.metro$^{-1}$ e r, vetor de variação do comprimento da mola, em metros. \\
+Neste experimento, tentaremos observar de forma equivalente ao Hooke, mas desta vez, pensando em movimento, relacionando a massa dos objetos acoplados à mola e seu período de oscilação. Matematicamente, podemos expressar da seguinte forma: 
+\begin{center}
+    \textbf{$ T^{2} = \frac{4\pi m}{K}$ \\
+            $  K = \frac{4 \pi^{2}m}{T^{2}} (2.0)$ }
+\end{center}
+Da mesma forma que a parte 1 do experimento, podemos perceber que a relação também se dá de \textbf{forma linear}.\footnote{Essa aproximação é válida apenas para pequenas forças atuantes no sistema, caso ocorra o contrário, o sistema sairá do regime linear.} \\
+\section{Procedimento Experimental}
+Para realizar o experimento, usou-se: 
+\begin{itemize}
+    \item Três hastes de metal de aproximadamente 30 cm;
+    \item Uma régua plástica de 30 cm;
+    \item Cinco pesos de 2g, 5g, 10g e 20g; 
+    \item Cronômetro Analógico na casa dos milissegundos;
+\end{itemize}
+\\
+
+Após o esquema montado (o mesmo do Experimento 1) mediu-se 10 oscilações para cada massa, e ao término da oscilação, os valores foram anotados\footnote{Para uma melhor exatidão, as massas foram combinadas formando 10 massas diferentes, com o mesmo objetivo já explicado na Parte 1 do experimento.}. \\
+\section{Dados Coletados}
+\begin{table}[!ht]
+    \centering
+    \begin{tabular}{|c|c|}
+    \hline
+    massas (kg) & $T_{10} (s)$\\
+    \hline
+    0.002     &  5.50   \\
+    \hline
+    0.005     & 5.97\\
+    \hline
+    0.007 &  6.56\\
+    \hline
+    0.010 & 7.13\\
+    \hline
+    0.012 & 8.19\\
+    \hline
+    0.015 & 8.82\\
+    \hline
+    0.017 & 7.30\\
+    \hline
+    0.020 & 9.30\\
+    \hline
+    0.022 & 9.87\\
+    \hline
+    0.025 & 10\\
+    \hline
+    \end{tabular}
+    \caption{Dados coletados relacionando a massa e o período de oscilação. \textit{Observe que esse é o período de 10 oscilações.}}
+    \label{tab:1}
+\end{table}
+\\
+\begin{table}[!ht]
+    \centering
+    \begin{tabular}{|c|c|}
+    \hline
+    massas (kg) & $T (s)$\\
+    \hline
+    0.002     &  0.55   \\
+    \hline
+    0.005     & 0.597\\
+    \hline
+    0.007 &  0.656\\
+    \hline
+    0.010 & 0.713\\
+    \hline
+    0.012 & 0.819\\
+    \hline
+    0.015 & 0.882\\
+    \hline
+    0.017 & 0.73\\
+    \hline
+    0.020 & 0.93\\
+    \hline
+    0.022 & 0.987\\
+    \hline
+    0.025 & 1\\
+    \hline
+    \end{tabular}
+    \caption{Dados coletados relacionando a massa e o período de oscilação. \textit{Observe que esse é o período de uma oscilação.}}
+    \label{tab:1}
+\end{table}
+\begin{table}[!ht]
+    \centering
+    \begin{tabular}{c}
+    \includegraphics[scale=0.5]{r3.png}  \\
+          Figura 3 : Grafico $T^{2}$ ($s^{2}$) x m (kg).
+    \end{tabular}
+    \label{fig3}
+\end{table}
+\\
+\section{Ajuste Linear}
+\begin{table}[!ht]
+    \centering
+    \begin{tabular}{|c|c|c|}
+     \hline
+     coeficiente angular & coeficiente linear & R$^{2}$  \\
+     \hline
+        0.79 & 0.01 & 0.88 \\
+        \hline
+    \end{tabular}
+    \caption{Coeficientes do Ajuste Linear.}
+    \label{tab:2}
+\end{table}
+\begin{table}[!ht]
+    \centering
+    \begin{tabular}{c}
+         \includegraphics[scale=0.5]{r4.png} \\
+          Figura 4: Gráfico do Ajuste Linear.
+    \end{tabular}
+    \label{fig4}
+\end{table}
+\\
+\newpage
+\subsection{Determinação da constante elástica}
+Por se tratar de uma relação linear, e observando a equação (2.0) e, podemos dizer que o coeficiente angular da reta, é igual à razão $\frac{4\pi^{2}}{k}$, sendo assim, determinaremos k como sendo:
+\begin{table}[!ht]
+    \centering
+    \begin{tabular}{|c|}
+         \hline
+         k = 6.28 $\frac{kg}{s^{2}}$.\\
+           \hline
+    \end{tabular}
+    \label{fig4}
+\end{table}
+\\
+\section{Conclusão}
+Podemos perceber através da Figura 4 e de \ref{tab:2}, que o experimento não foi tão eficiente quanto o primeiro (visto que o coeficiente do ajuste é 0.88). Tal insucesso pode ser explicado por exemplo, pelo erro do observador ao medir as 10 oscilações, no caso, senti-me inseguro em relação a apenas 10 oscilações, numa próxima medição, por exemplo, talvez aumentar o número de oscilações ajude a transformar num resultado mais preciso. Podemos dizer então, em comparação à primeira parte do experimento, o segundo se torna menos preciso. 
+
+\newpage
+\section{Referências}
+      Nussenzveig, Herch Moysés. \textit{Curso de Física Básica: fluidos, oscilações e ondas, calor. Vol. 2}. Editora Blucher, 2018.\\
+      Lei de hooke \textit{wikipedia - Enciclopédia livre} \url{https://pt.wikipedia.org/wiki/Lei_de_Hooke} \textit{Acessado em 07/04/2022}.
+      Robert Hooke \textit{wikipedia - Enciclopédia livre} \url{https://pt.wikipedia.org/wiki/Robert_Hooke} \textit{Acessado em 07/04/2022}.\\
+      Toda a análise de dados pode ser acessada através de \url{https://github.com/jos-g/cons-elastica}
+\end{document}
